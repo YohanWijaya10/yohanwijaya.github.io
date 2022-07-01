@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+    <link href="https://id.allfont.net/allfont.css?fonts=source-code-pro" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<link href='https://css.gg/mail-open.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0;
+        }
+        .part1 {
+            margin: 4%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            text-align: center;
+            align-items: center;
+        }
+        .profil img {
+            width: 80vmin;
+            animation: float 6s ease-in-out infinite;
+        } 
+        .profil {
+            margin: 0%;
+        }
+        @keyframes float {
+            0% {
+                transform: translatey(0px);
+            }
+
+            50% {
+                transform: translatey(-5vmin);
+            }
+
+            100% {
+                transform: translatey(0px);
+            }
+        }
+        .maintext {
+    font-family: 'Open Sans Light';
+    font-weight: bold;
+    margin: 2%;
+    text-align: center;
+
+}
+
+.main1 {
+    font-family: 'Open Sans Light';
+    font-weight: bold;
+    font-size: 6vmin;
+}
+
+.main2 {
+    font-family: 'Source Code Pro', arial;
+    font-size: 16vmin;
+
+}
+
+.main3 {
+    font-family: 'Open Sans Light';
+    font-weight: bold;
+    font-size: 6vmin;
+    color: #FF914D;
+    border-right: .15em solid orange;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3s steps(60, end), blink-caret .5s step-end infinite;
+
+
+}
+
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
+.part0 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    background-color: #18191B;
+    padding: 4%;
+}
+.part2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    background-color: #18191B;
+    padding: 4%;
+     overflow: hidden;
+
+     position: relative;
+}
+
+.part3 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    background-color: #18191B;
+    padding: 4%;
+        overflow: hidden;
+
+        position: relative;
+}
+.part4 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    background-color: #18191B;
+    padding: 4%;
+     overflow: hidden;
+   
+     position: relative;
+
+   
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: white;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2vmin;
+    padding-left: 4vmin;
+    padding-right: 4vmin;
+    padding-top: 1vmin;
+    padding-bottom: 1vmin;
+    border-radius: 0.5vmin;
+    font-family: 'Open Sans Light';
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+}
+
+.topnav a:hover {
+    color: #030303;
+    color: #FF914D;
+    transform: scale(1.10);
+    
+}
+
+.topnav a.active {
+    background-color: #FF914D;
+    color: white;
+    transition: all .5s ease-in-out;
+    
+}
+
+.topnav a.active:hover {
+    background-color: white;
+    color: #FF914D;
+    border-bottom: 4px solid #FF914D;
+    padding-left: 4.5vmin;
+    padding-right: 4.5vmin;
+    transform: scale(1.10);
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav a {
+        font-size: 2.5vmin;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+.part6 {
+    background-color: #FF914D;
+    justify-content: space-evenly;
+    text-decoration: none;
+    flex-wrap: wrap;
+    padding: 2%;
+    padding-top: 1%;
+        overflow: hidden;
+
+        position: relative;
+
+}
+
+.p6-mailtitle {
+    font-family: 'Source Code Pro',
+        arial;
+    font-size: 3vmin;
+    font-weight: bold;
+    margin-bottom: 0.5vmin;
+    color: white;
+}
+
+.p6-maintext {
+    font-family: 'Source Code Pro',
+        arial;
+    font-weight: bold;
+    font-size: 2vmin;
+    margin-bottom: 6vmin;
+    color: white;
+}
+
+.p6-wevtitle {
+    font-family: 'Source Code Pro',
+        arial;
+    font-size: 3vmin;
+    font-weight: bold;
+    margin-bottom: 0.5vmin;
+    color: white;
+}
+
+.p6-webtext {
+    font-family: 'Source Code Pro',
+        arial;
+    font-weight: bold;
+    font-size: 2vmin;
+    margin-bottom: 6vmin;
+    color: white;
+
+}
+
+.p6-socialtitle {
+    font-family: 'Source Code Pro',
+        arial;
+    font-size: 3vmin;
+    font-weight: bold;
+    color: white;
+
+}
+
+.p6-icon {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+
+}
+
+.p6-icon i {
+    margin-top: 2vmin;
+    margin-right: 4vmin;
+
+}
+
+.leftp6 {
+    font-size: 7vmin;
+    font-family: 'Source Code Pro',
+        arial;
+    margin: 3%;
+    font-weight: bold;
+    animation: yourAnimation 2s ease 0s infinite normal forwards;
+}
+
+.logotext {
+    font-size: 5vmin;
+    font-family: 'Source Code Pro',
+        arial;
+    color: white;
+    margin: 2%;
+    font-weight: bold;
+    animation: yourAnimation 2s ease 0s infinite normal forwards;
+}
+
+.container-p6 {
+    background-color: #FF914D;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2%;
+}
+
+.mainimg img {
+    width: 23vmin;
+    transition: all .5s ease-in-out;
+    margin: 1%;
+}
+
+.maintext {
+    text-align: center;
+
+
+}
+
+.text1 {
+    font-size: 7vmin;
+    font-family: 'Source Code Pro', arial;
+    color: #FF914D;
+    font-weight: bold;
+    align-content: stretch;
+
+}
+
+.text2 {
+    font-size: 13vmin;
+    font-family: 'Source Code Pro',
+        arial;
+    color: black;
+    font-weight: bold;
+}
+
+.leftimg {
+    display: block;
+}
+
+.leftimgflex {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1vmin;
+}
+
+.leftimg1 img {
+    width: 40vmin;
+    transition: all .5s ease-in-out;
+    margin: 1%;
+}
+
+.leftimg2 img {
+    width: 18vmin;
+    transition: all .5s ease-in-out;
+    margin: 1%;
+}
+.leftimg21 img {
+    width: 23vmin;
+    transition: all .5s ease-in-out;
+    margin: 1%;
+}
+
+.leftimg2 img:hover{
+    transform: scale(1.10);
+}
+.leftimg1 img:hover {
+    transform: scale(1.10);
+}
+.containerp2 {
+    width: 97%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: stretch;
+    margin: 2%;
+    order: 1;
+    position: relative;
+}
+
+.rtext1 {
+    display: block;
+    align-content: space-evenly;
+    width: 75%;
+    flex-wrap: wrap;
+
+}
+
+.rtittle {
+    font-size: 6vmin;
+    font-family: 'Source Code Pro', arial;
+    color: white;
+    font-weight: bold;
+    margin: 2%;
+
+
+
+}
+
+.rtext {
+    font-size: 2.8vmin;
+    font-family: 'Source Code Pro', arial;
+    color: white;
+    font-weight: bold;
+    line-height: 1.6;
+    flex-wrap: wrap;
+    margin: 2%;
+    padding: 2%;
+    width: 90%;
+    text-align: left;
+
+}
+
+.rotatetext {
+    color: rgb(49, 49, 49);
+    font-family: 'Source Code Pro',
+        arial;
+    font-size: 20vmin;
+    font-style: italic;
+    position: absolute;
+
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgb(53, 53, 53), #1d1d1d, rgb(37, 37, 37));
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position-x: -500%;
+    }
+
+    100% {
+        background-position-x: 500%;
+    }
+}
+
+.rotatetext1 {
+
+    position: absolute;
+    overflow: hidden;
+
+}
+
+.bgtext1 {
+    color: rgb(49, 49, 49);
+    font-family: 'Source Code Pro',
+        arial;
+    font-size: 20vmin;
+    font-style: italic;
+
+
+    font-weight: bold;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+    }
+
+    to {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    from {
+        -webkit-transform: translateX(100%);
+    }
+
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+.reveal{
+  position: relative;
+  transform: translateY(10vmin);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.container3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: stretch;
+
+    order: 1;
+    position: relative;
+ 
+}
+
+.titlep3 {
+    font-size: 8vmin;
+    font-family: 'Source Code Pro', arial;
+    color: white;
+    font-weight: bold;
+    margin: 2%;
+ 
+
+
+}
+
+.word {
+    font-size: 3vmin;
+    font-family: 'Source Code Pro', arial;
+    color: white;
+    font-weight: bold;
+    line-height: 1.6;
+    flex-wrap: wrap;
+    margin: 2%;
+    padding: 2%;
+    text-align: left;
+ 
+}
+
+.textp3 {
+    display: block;
+    align-content: space-evenly;
+    width: 60%;
+    flex-wrap: wrap;
+  
+}
+.imageprt img {
+    width: 60vmin;
+    transition: all .5s ease-in-out;
+    margin: 1%;
+  
+}
+
+.imageprt1 img {
+    width: 70vmin;
+    transition: all .5s ease-in-out;
+    margin: 1%;
+
+}
+
+.rotatetext2 {
+
+    position: absolute;
+    overflow: hidden;
+
+}
+
+.bgtext2 {
+    color: rgb(49, 49, 49);
+    font-family: 'Source Code Pro',
+        arial;
+    font-size: 20vmin;
+    font-style: italic;
+
+
+    font-weight: bold;
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+
+    -moz-animation: my-animationn 15s linear infinite;
+    -webkit-animation: my-animationn 15s linear infinite;
+    animation: my-animationn 15s linear infinite;
+    }
+
+
+
+/* for Chrome */
+@-webkit-keyframes my-animationn {
+    from {
+        -webkit-transform: translateX(-100%);
+    }
+
+    to {
+        -webkit-transform: translateX(100%);
+    }
+}
+
+@keyframes my-animationn {
+    from {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    to {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+.textprof {
+    display: block;
+    align-content: space-evenly;
+    width: 75%;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width:60%;
+
+}
+
+.titleprof {
+    font-size: 6vmin;
+    font-family: 'Source Code Pro', arial;
+    color: white;
+    font-weight: bold;
+    margin: 2%;
+}
+
+.isiprof{
+    font-size: 2.8vmin;
+    font-family: 'Source Code Pro', arial;
+    color: white;
+    font-weight: bold;
+    line-height: 1.6;
+    flex-wrap: wrap;
+    margin: 2%;
+    padding: 2%;
+    text-align: left;
+    
+}
+.p6-icon a {
+    color: white;
+}
+.imgprof img {
+    width: 37vmin;
+    transition: all .5s ease-in-out;
+    margin: 1%;
+    animation: float 6s ease-in-out infinite;
+
+}
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-5vmin);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+
+.container0 {
+    width: 100%;
+    margin-top: 15vmin;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    order: 1;
+    position: relative;
+
+}
+
+#txty{
+    font-family: 'Source Code Pro', arial;
+    font-size: 8vmin;
+    color :#FF914D;
+    font-weight: bold;
+}
+.jam {
+    font-family: 'Source Code Pro', arial;
+    font-size: 2vmin;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.rightbox{
+  
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+}
+.rb-container {
+    font-family: "PT Sans", sans-serif;
+    width: 20%;
+    display: block;
+    position: relative;
+   
+}
+
+.rb-container ul.rb {
+    padding: 0%;
+    display: inline-block;
+}
+
+.rb-container ul.rb li {
+    list-style: none;
+    border-left: 1px dashed #fff;
+    padding: 0 0 10vmin 5vmin;
+    position: relative;
+}
+.rb-container ul.rb li:last-child {
+    border-left: 0;
+}
+.rb-container ul.rb li::before {
+    position: absolute;
+    left: -2.1vmin;
+    top: 0vmin;
+    content: " ";
+    border: 1vmin solid rgba(255, 255, 255, 1);
+    border-radius: 500%;
+    background: orange;
+    height: 2vmin;
+    width: 2vmin;
+    transition: all 500ms ease-in-out;
+    
+}
+
+.rb-container ul.rb li:hover::before {
+    border-color: #232931;
+    transition: all 1000ms ease-in-out;
+}
+
+ul.rb li .timestamp {
+    color: orange;
+    position: relative;
+    width: 20vmin;
+    font-size: 3vmin;
+    text-align: left;
+}
+
+.item-title {
+    color: #fff;
+    font-size: 3vmin;
+    text-align: left;
+}
+
+.journey{
+    margin: 2%;
+    border: 1px solid red;
+}
+.righttext4 {
+    font-family: 'Source Code Pro',
+    arial;
+    font-size: 8vmin;
+    color :white;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.container4{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        position: relative;
+}
+.Mcontainer4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+
+ #animation-bg {
+     width: 100%;
+     height: 200vh;
+     overflow: hidden;
+     position: absolute;
+
+
+     
+ }
+        
+    </style>
+</head>
+<body  onload="startTime()"> </body>>
+    <div class = "part1">
+     <!--&------ Img right -------->
+      <div class="profil">
+          <img src="yohanwijaya.png">
+        </div>
+     <!--&------ Main Text -------->
+  <div class = "maintext">
+      <div class = "main1">
+        <span>Hi everyone, my name is</span>
+      </div>
+    <div class = "main2">
+        <span>Yohan <br> Wijaya</span>
+      </div>
+        <div class = "main3">
+        <span>I'm a Developer</span>
+      </div>
+  </div>
+  </div>
+  <div class="part0">
+  <div class="rotatetext">
+    <div class="bgtext ">
+      <span>My Profile</span>
+    </div>
+  </div>
+  <div class="container0 ">
+    <div class="imgprof reveal">
+      <img src="image/pimg.png">
+    </div>
+    <div class="textprof">
+    <div class="titleprof reveal">
+      <span>MY PROFILE</span>
+    </div>
+    <div class="isiprof reveal">
+      <span>Hi, my name is Yohan Wijaya, I am a programmer from Indonesia. coding is my favorite, because coding is like a game for me. Many challenges, fun, and make me think logically. also coding can hone creativity and problem solving. besides that I like designing especially in web design and app design, and I also like video editing. a little story from myself, I am the type who doesn't like to waste time, I am responsible for work, hardworking, brave to try new things, creative, and can work well in a team </span>
+    </div>
+    <div class="jam reveal">
+      <SPAN>Time is Money</SPAN>
+      <div id="txty"></div>
+    </div>
+    
+  </div>
+  </div>
+</div>
+
+
+<div class="part2">
+  <div class="rotatetext">
+    <div class="bgtext">
+      <span>CODING SKILL</span>
+      <span>CODING SKILL</span>
+      <span>CODING SKILL</span>
+    </div>
+  </div>
+  <div class="containerp2">
+    <div class="leftimg reveal">
+      <div class="leftimg1">
+        <img src="image/mysql.png">
+      </div>
+      <div class="leftimgflex reveal">
+        <div class="leftimg2">
+          <img src="image/html.png">
+        </div>
+        <div class="leftimg2">
+          <img src="image/C3.png">
+        </div>
+        <div class="leftimg2">
+          <img src="image/CSS.png">
+        </div>
+        <div class="leftimg2">
+          <img src="image/PHP.png">
+        </div>
+        <div class="leftimg2">
+            <img src="image/js.png">
+          </div>
+          <div class="leftimg2">
+            <img src="image/pyh.png">
+          </div>
+        </div>    
+      </div>
+      <div class="rtext1 reveal">
+        <div class="rtittle">
+          <span >My Coding  Skill</span>
+        </div>
+        <div class="rtext">
+          <span>I started learning coding at the end of high school, at first I learned python. after that i studied at ciputra university and there, first i studied C# and sql after that i also learned about databases, application development, erp systems and many more. besides that I was also taught several programming languages ​​such as html, css, php and javascript. I think coding is like An art, I can appreciate my inspiration and I'm free to work on coding. I have also worked on several projects, such as making a piano app on the console with C#, then I also created a website for ordering bus tickets or commonly called an airport shuttle.</span>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="part2">
+  <div class="rotatetext1">
+    <div class="bgtext1">
+      <span>EDITING SKILL</span>
+      <span>EDITING SKILL</span>
+      <span>EDITING SKILL</span>
+    </div>
+  </div>
+  <div class="containerp2">
+    <div class="leftimg">
+      <div class="leftimg1">
+       
+      </div>
+      <div class="leftimgflex reveal">
+        <div class="leftimg2">
+          <img src="image/ps.png">
+        </div>
+        <div class="leftimg2">
+          <img src="image/lr.png">
+        </div>
+        <div class="leftimg2">
+          <img src="image/ae.png">
+        </div>
+        <div class="leftimg2">
+           <img src="image/pr.png">
+        </div>
+        <div class="leftimg2">
+             <img src="image/fig.png">
+          </div>
+          <div class="leftimg2">
+            <img src="image/cd.png">
+          </div>
+        </div>    
+      </div>
+      <div class="rtext1 reveal">
+        <div class="rtittle">
+          <span >My Editing Skill</span>
+        </div>
+        <div class="rtext">
+          <span>"I started editing when I was in junior high school with only a smartphone and a simple photo editing application, after that I learned to edit videos when I was still in junior high school. After high school I learned photo and video editing on a PC, I only learned basic basic editing, after that I deepened my editing field again such as making 3d modeling, 3d tracking objects, and was a film editor as well as a director. after that i went to college i learned about ui and ux , all the projects i do all the design is my own . besides that I also made nft and can be seen on the next page"</span>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="part3">
+  <div class="rotatetext2">
+    <div class="bgtext2">
+      <span>MY WEB PROJECT</span>
+      <span>MY WEB PROJECT</span>
+      <span>MY WEB PROJECT</span>
+    </div>
+  </div>
+  <div class="container3">
+      <div class="textp3">
+        <div class="titlep3 reveal">
+          <span>AZHUU AIRPORT <br> SHUTTLE</span>
+        </div>
+        <div class="word reveal">
+          <span>
+azhuu airport shutle is a web for ordering bus tickets, this is my first web project, in this project it is divided into 2 websites, namely for customers and administrators, the customer section is only for customers to buy bus tickets, and the administrator web section is for shuttle bus owners to manage
+shuttle bus</span>
+        </div>
+      </div>
+       <div class="imageprt reveal">
+          <img src="image/azua.png">
+        </div>
+    </div>
+</div>
+
+<div class="part3">
+  <div class="rotatetext2">
+    <div class="bgtext2">
+      <span>MY APP PROJECT</span>
+      <span>MY APP PROJECT</span>
+      <span>MY APP PROJECT</span>
+    </div>
+  </div>
+  <div class="container3">
+      <div class="textp3">
+        <div class="titlep3 reveal">
+          <span>CONSOLE <br> PIANO</span>
+        </div>
+        <div class="word reveal">
+          <span>I also made a piano in the C# console, it was my first project in college, in this app there are several features, namely we can play the piano, then we can also listen to the music that has been provided, the music is made of console beeps, which I arranged to become a song</span>
+        </div>
+      </div>
+       <div class="imageprt1 reveal">
+          <img src="image/piano.png">
+        </div>
+    </div>
+</div>
+
+<div class="part2">
+  <div class="rotatetext1">
+    <div class="bgtext1">
+      <span>NFT NFT NFT</span>
+      <span>NFT NFT NFT</span>
+      <span>NFT NFT NFT</span>
+    </div>
+  </div>
+  <div class="containerp2">
+    <div class="leftimg">
+      <div class="leftimg1">
+       
+      </div>
+      <div class="leftimgflex reveal">
+        <div class="leftimg21">
+          <img src="image/20.png">
+        </div>
+        <div class="leftimg21">
+          <img src="image/24.png">
+        </div>
+        <div class="leftimg21">
+          <img src="image/26.png">
+        </div>
+        <div class="leftimg21">
+           <img src="image/21.png">
+        </div>
+       
+        </div>    
+      </div>
+      <div class="rtext1 reveal">
+        <div class="rtittle">
+          <span >NFT - The Little bird</span>
+        </div>
+        <div class="rtext">
+          <span>I also have an nft called the little bird, which features a bird with a blank look on its face, in nft the little bird there are various kinds of cute and cool bird models, i sell it on open sea, my shop name is Burungmu</span>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="part4">
+ 
+    <div id="animation-bg">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+<script>
+VANTA.BIRDS({
+  el: "#animation-bg",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  backgroundColor: 0x18191b,
+  colorMode: "lerp"
+})
+</script>
+</script>
+</div>
+  
+  <div class="mcontainer4">
+    <div class="container4">
+    <div class="righttext4 reveal">
+    <span>My Journey</span>
+  </div>
+      <div class="rb-container">
+        <ul class="rb">
+          <li class="rb-item reveal" ng-repeat="itembx">
+            <div class="timestamp">
+              2018
+            </div>
+            <div class="item-title">Learn editing photo and video.</div>
+  
+          </li>
+          <li class="rb-item reveal" ng-repeat="itembx">
+            <div class="timestamp">
+              2019
+            </div>
+            <div class="item-title">Learn Photoshop and Coreldraw.</div>
+  
+          </li>
+  
+          <li class="rb-item reveal" ng-repeat="itembx">
+            <div class="timestamp">
+              2020
+            </div>
+            <div class="item-title">
+              learn After Effect and Adobe Premier.
+            </div>
+            
+  
+          </li>
+          <li class="rb-item reveal" ng-repeat="itembx">
+            <div class="timestamp">
+              November 2020<br>
+            </div>
+            <div class="item-title">Learn C#.</div>
+          </li>
+
+         <li class="rb-item reveal" ng-repeat="itembx">
+            <div class="timestamp">
+             February 2021
+            </div>
+            <div class="item-title">Learn Sql.</div>
+          
+          
+          </li>
+          <li class="rb-item reveal" ng-repeat="itembx">
+            <div class="timestamp">
+             November 2021
+            </div>
+            <div class="item-title">Learn Html, Css, Python and javascript.</div>
+          
+          
+          </li>
+  
+        </ul>
+  
+      </div>
+ 
+</div>
+  </div>
+  
+
+</div>
+<div class="part6">
+
+  <div class="logotext ">
+    <span>yohanwijaya.com</span>
+  </div>
+
+  <div class="container-p6">
+
+    <div class="p6-1">
+  <div class="leftp6">
+    <span>Looking forward <br> to working with <br> everyone!</span>
+  </div>
+  </div>
+
+  <div class="p6-2">
+    <div class="p6-mail">
+      <div class="p6-mailtitle">
+        <span>Email Address</span>
+      </div>
+      <div class="p6-maintext">
+        <span>Yohanwijaya10@gmail.com</span>
+      </div>
+    </div>
+
+    <div class="p6-web">
+      <div class="p6-wevtitle">
+        <span>Website</span>
+      </div>
+      <section></section>
+      <div class="p6-webtext">
+        <span>YohanWijaya.com</span>
+      </div>
+      </section>
+    </div>
+
+     <div class="p6-social">
+      <div class="p6-socialtitle">
+        <span>Social Media</span>
+      </div>
+      <div class="p6-icon">
+        <a href="https://api.whatsapp.com/send?phone=6285156568385"><i class="fa fa-whatsapp" style="font-size:4vmin"></i></a>
+        <a href="https://www.instagram.com/yohan_wijy/"><i class="fa fa-instagram" style="font-size:4vmin"></i></a>
+        <a href="https://github.com/YohanWijaya10/"><i class="fa fa-github" style="font-size:4vmin"></i></a>
+        <a href="https://www.linkedin.com/in/yohan-wijaya-7b36b4221/"><i class="fa fa-linkedin" style="font-size:4vmin"></i></a>
+
+        
+        
+      </div>
+    </div>
+
+<script>
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
+</script>
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txty').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+<script>
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
+</script>
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txty').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</body>
+</html>
